@@ -1,0 +1,4 @@
+The script can be used in any music list page of http://music.baidu.com.
+`ruby downloader.rb YOUR_URI`
+It will start some wget threads.
+The music will be saved in your current working directory.
