@@ -9,6 +9,6 @@ doc.css('span.song-title a').each do |link|
   download_button = download_page.css 'a#download'
   file_path = download_button[0].attributes['href'].value
   Thread.new do
-  `wget -O "#{file_name}".mp3 http://music.baidu.com#{file_path}`
+    `wget -O "#{file_name}".mp3 http://music.baidu.com#{file_path}`
   end
 end
